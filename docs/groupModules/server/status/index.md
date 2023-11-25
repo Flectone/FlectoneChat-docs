@@ -8,7 +8,12 @@ The status module configures the server information in the server list.
 [[toc]]
 
 ## player-count
-Maximum number of players in the server list (visual only).
+Maximum number of players in the server list.
+
+::: tip Important
+If the number of players exceeds the limit, the player will not be allowed in and will display the message server.status.player-count.server-full
+Permission to bypass server.status.player-count.bypass
+:::
 
 | Parameter | Description          | Type     | Default |
 | --------- | -------------------- | -------- | ------- |
