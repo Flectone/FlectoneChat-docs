@@ -172,6 +172,7 @@ commands:
       reply: "&&2/reply"
       mail: "&&2/mail"
       tictactoe: "&&2/tictactoe"
+      translateto: "&&2/translateto"
 
     color:
       false: "#ff4e4e[❌] "
@@ -184,7 +185,7 @@ commands:
       - "&&1------------------------"
       - "&&1Действия игроков: \n <advancement> \n <death> \n <join> \n <quit> \n <auto-message>"
       - "&&1------------------------"
-      - "&&1Оповещения команд: \n <me> \n <try> \n <dice> \n <ball> \n <kick> \n <ban> \n <mute> \n <warn> \n <tell> \n <reply> \n <mail> \n <tictactoe>"
+      - "&&1Оповещения команд: \n <me> \n <try> \n <dice> \n <ball> \n <kick> \n <ban> \n <mute> \n <warn> \n <tell> \n <reply> \n <mail> \n <tictactoe> \n <translateto>"
       - "&&1------------------------"
       - "&&1Обязательно сохраняй настройки с помощью /chatsettings save"
 ```
@@ -527,8 +528,9 @@ commands:
 commands:
   spy:
     message: "#ff9729[👁] &&2<player> &&1использовал <command> ⏵ &&2<message>"
-    true-message: "#ff9729[👁] Ты #4eff52включил #ff9729режим слежки"
-    false-message: "#ff9729[👁] Ты #ff4e4eвыключил #ff9729режим слежки"
+    default-message: "#ff9729[👁] #4eff52☑ &&2<player> #4eff52<action> &&2→ &&2<message>"
+    usage-message: "#ff9729[👁] #fce303☐ &&2<player> #fce303<action> &&2→ &&2<message>"
+    error-message: "#ff9729[👁] #ff4e4e☒ &&2<player> #ff4e4e<action> &&2→ &&2<message>"
 ```
 
 ## /stream
