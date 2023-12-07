@@ -173,6 +173,7 @@ commands:
       reply: "&&2/reply"
       mail: "&&2/mail"
       tictactoe: "&&2/tictactoe"
+      translateto: "&&2/translateto"
 
     color:
       false: "#ff4e4e[❌] "
@@ -185,7 +186,7 @@ commands:
       - "&&1------------------------"
       - "&&1Server messages: \n <advancement> \n <death> \n <join> \n <quit> \n <auto-message>"
       - "&&1------------------------"
-      - "&&1Command alerts: \n <me> \n <try> \n <dice> \n <ball> \n <kick> \n <ban> \n <mute> \n <warn> \n <tell> \n <reply> \n <mail> \n <tictactoe>"
+      - "&&1Command alerts: \n <me> \n <try> \n <dice> \n <ball> \n <kick> \n <ban> \n <mute> \n <warn> \n <tell> \n <reply> \n <mail> \n <tictactoe> \n <translateto>"
       - "&&1------------------------"
       - "&&1Be sure to save your settings with /chatsettings save"
 ```
@@ -528,8 +529,9 @@ commands:
 commands:
   spy:
     message: "#ff9729[👁] &&2<player> &&1used <action> ⏵ &&2<message>"
-    true-message: "#ff9729[👁] You #4eff52turned on #ff9729spy mode"
-    false-message: "#ff9729[👁] You #ff4e4eturned off #ff9729spy mode"
+    default-message: "#ff9729[👁] #4eff52☑ &&2<player> #4eff52<action> &&2→ &&2<message>"
+    usage-message: "#ff9729[👁] #fce303☐ &&2<player> #fce303<action> &&2→ &&2<message>"
+    error-message: "#ff9729[👁] #ff4e4e☒ &&2<player> #ff4e4e<action> &&2→ &&2<message>"
 ```
 
 ## /stream
@@ -695,7 +697,7 @@ commands:
 | Parameter | Description                          | Type       | Default |
 | --------- | ------------------------------------ | ---------- | ------- |
 | aliases   | Aliases                              | `string[]` | `[]`    |
-| per-page  | Количество игроков на одной странице | `number`   | `4`     |
+| per-page  | Number of players per page           | `number`   | `4`     |
 
 ### Messages configuration
 ```yaml
@@ -714,3 +716,4 @@ commands:
     unwarn-button: "&c☒"
     unwarn-hover: "&&1Click to unwarn &&2<player>"
 ```
+## translateto

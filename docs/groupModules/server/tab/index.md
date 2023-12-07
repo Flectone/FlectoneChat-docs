@@ -7,7 +7,7 @@ The tab module is responsible for the text shown in the TAB window
 1. header 
 2. footer 
 3. player-list-name 
-4. player-ping
+4. player-list
 
 ## Customizing messages
 
@@ -83,10 +83,10 @@ It is possible to change the name of a player in a tab in `player.name.tab` in t
 
 ## Module customization
 
-### `server.tab.player-ping`
-| Parameter | Description                          | Type      | Default |
-| --------- | ------------------------------------ | --------- | ------- |
-| enable    | Enable ping display next to nickname | `boolean` | `true`  |
+### `server.tab.player-list`
+| Parameter | Description                                                                             | Type     | Default |
+| --------- | --------------------------------------------------------------------------------------- | -------- | ------- |
+| mode      | player-list text mode. Could be one of: `health` `level` `ping` `food` `armor` `attack` | `string` | `ping`  |
 
 
 ### `server.tab.update`

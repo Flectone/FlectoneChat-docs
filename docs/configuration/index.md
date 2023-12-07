@@ -7,7 +7,7 @@
 plugin:
   # Current config version, DO NOT TOUCH!
 
-  version: 4.0.0
+  version: 4.3.0
 
   # Language used for messages, available `en` and `ru`
   language: en
